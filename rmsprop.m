@@ -1,4 +1,4 @@
-niter = 10;
+niter = 20;
 x = y;
 E = [];
 S = 0;
