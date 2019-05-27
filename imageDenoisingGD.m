@@ -34,4 +34,4 @@ tau = tau*4;
 adam()
 
 clf;
-imageplot(clamp(x));
+imageplot(clamp(y));
