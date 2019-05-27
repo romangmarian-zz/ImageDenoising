@@ -1,4 +1,4 @@
-niter = 100;
+niter = 20;
 x = y;
 E = double.empty(300, 0);
 s = 0;

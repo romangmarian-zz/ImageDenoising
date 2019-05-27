@@ -1,7 +1,6 @@
 addpath('toolbox_signal')
 addpath('toolbox_general')
 addpath('toolbox_graph')
-addpath('solutions/optim_1_gradient_descent')
 n = 256;
 x0 = rescale( load_image('test',n) );
 
@@ -32,7 +31,7 @@ Gradf = @(y,x,epsilon)x-y+lambda*GradJ(x,epsilon);
 tau = 1.8/( 1 + lambda*8/epsilon );
 tau = tau*4;
 
-nag()
+rmsprop()
 
 clf;
 imageplot(clamp(x));
