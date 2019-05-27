@@ -31,7 +31,7 @@ Gradf = @(y,x,epsilon)x-y+lambda*GradJ(x,epsilon);
 tau = 1.8/( 1 + lambda*8/epsilon );
 tau = tau*4;
 
-rmsprop()
+adam()
 
 clf;
 imageplot(clamp(x));
