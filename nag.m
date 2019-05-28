@@ -1,4 +1,4 @@
-niter = 20;
+niter = 300;
 x = y;
 E = double.empty(300, 0);
 b =0.9;
@@ -10,3 +10,8 @@ for i=1:niter
     vel = b*vel+ (1-b)*Gradf(y, proj_x, epsilon);
     x = x - tau*vel;
 end
+
+clf;
+h = plot(E);
+set(h, 'LineWidth', 2);
+axis tight;

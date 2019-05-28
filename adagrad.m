@@ -1,4 +1,4 @@
-niter = 20;
+niter = 300;
 x = y;
 E = double.empty(300, 0);
 s = 0;
@@ -9,3 +9,7 @@ for i=1:niter
     s = s + crGrad.^2;
     x = x - tau*Gradf(y, x, epsilon)./(sqrt(fuzz + s));
 end
+clf;
+h = plot(E);
+set(h, 'LineWidth', 2);
+axis tight;

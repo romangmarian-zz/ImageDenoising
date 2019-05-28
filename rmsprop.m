@@ -1,4 +1,4 @@
-niter = 20;
+niter = 300;
 x = y;
 E = [];
 S = 0;
@@ -11,3 +11,6 @@ for i = 1:niter
     x = x - tau * crtGrad ./ sqrt(S + fuzz);
 end
 clf;
+h = plot(E);
+set(h, 'LineWidth', 2);
+axis tight;
